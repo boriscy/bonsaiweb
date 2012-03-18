@@ -1,0 +1,10 @@
+*.swp
+*.swo
+*.log
+*.kpf
+*.sqlite3
+*.sqlite
+*.rbc
+*~
+.rvmrc
+.sass-cache
