@@ -1,0 +1,1 @@
+((function(){$(function(){return $("[title]").tooltip(),$("#video").click(function(){var a;return a='<iframe width="640" height="390" src="http://youtube.com/embed/cnK38rqrlok/?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>',$("<div/>").html(a).dialog({modal:!0,width:660,height:410,close:function(a,b){return $(this).remove()}})})})})).call(this)

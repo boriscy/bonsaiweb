@@ -12,7 +12,8 @@
   .carousel-control:hover{
     background: rgba(0, 0, 0, 0.7);
   }
-
+- content_for :title do
+  Producto
 #banner
   %h2 Producto
   
@@ -50,13 +51,13 @@
       .carousel-caption
         %h4 Cuentas Bancos y Cajas
         %p 
-        Registre los movimientos que se han realizado. Revisión de transacciones que faltan ser revisadas o conciliadas. Multiples monedas.
+          Registre los movimientos que se han realizado. Revise antes de ingresar o egresar de alguna cuenta las transacciones que han sido realizadas, multiples monedas y tipos de cambio. Facilmente relacione todo sus movimientos con Clientes y Proveedores.
     .item.active
       = image_tag "clients.png", :size => "940x514" 
       .carousel-caption
         %h4 Clientes y Proveedores
         %p 
-          Sepa toda la inforación relacionada a un cliente o proveedor, cuentas por pagar, cuentas por cobrar, ventas o compras realizadas al mismo.
+          Sepa toda la inforación relacionada a un cliente o proveedor, cuentas por pagar, cuentas por cobrar, ventas o compras realizadas al mismo, así como las fechas en las cuales debe pagar.
 
   // Carousel nav
   %a.carousel-control.left( href="javascript:" data-slide="prev") &lsaquo;
