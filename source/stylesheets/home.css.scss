@@ -69,26 +69,24 @@ ul{
     left: 20px;
   }
   #login{
-    color: $white;
-    @include border-radius(3px);
-    background-color: lighten($green, 10%);
+    @include single-box-shadow(#51A351, 0, 0, 12px);
+    @include single-text-shadow(#265B25, 1px, 1px);
     position: absolute;
     top: 16px;
     right: 40px;
-    //padding-left: 20px;
-    //color: darken($green, 10%);
-    //background: lighten($green, 10%) url(user2.png) no-repeat 3px 4px;
-    //font-style: italic;
-    padding: 3px 7px;// 3px 3px 22px;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: muli, arial, serif;
-    text-shadow: 1px 1px 2px #7F7F7F;
-    box-shadow: 2px 2px 5px darken($green, 20%);
-    &:hover{
-      background-color: darken($green, 10%);
-    }
+    //color: $white;
+    //@include border-radius(3px);
+    //background-color: lighten($green, 10%);
+    //padding: 3px 7px;// 3px 3px 22px;
+    //font-size: 14px;
+    //font-weight: bold;
+    //text-decoration: none;
+    //font-family: muli, arial, serif;
+    //text-shadow: 1px 1px 2px #7F7F7F;
+    //box-shadow: 2px 2px 5px darken($green, 20%);
+    //&:hover{
+    //  background-color: darken($green, 10%);
+    //}
 
   }
   #menu{
