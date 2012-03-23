@@ -8,7 +8,6 @@
       Planse y Precios
     </title>
     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css' />
-    <link href="stylesheets/twitter-bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/home.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="javascripts/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="javascripts/jquery-ui-dialog.min.js" type="text/javascript"></script>
@@ -28,8 +27,8 @@ WebFontConfig={google:{families:["Muli"]}},function(){var a=document.createEleme
         <ul id='menu'>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="tour.html">Producto</a></li>
-          <li><a href="team.html">Nosotros</a></li>
           <li><a class="selected" href="prices.html">Precios</a></li>
+          <li><a href="team.html">Nosotros</a></li>
         </ul>
         <a id="login" class="btn btn-success b" href="/users/sign_in">Ingresar</a>
       </div>
@@ -41,12 +40,18 @@ WebFontConfig={google:{families:["Muli"]}},function(){var a=document.createEleme
       <div class='row-fluid' id='prices'>
         <div class='span4'>
           <div class='price'>
-            <h3 class='title'>
-              <span class='tip' title='bonsai del tamaño de una palma mano'>Shohin</span>
-              &nbsp;
-              <span class='n'>USD 20</span>
-              <small>por mes</small>
-            </h3>
+            <div class='title'>
+              <h2>
+                <span class='tip' title='bonsai del tamaño de una palma mano'>SHOHIN</span>
+              </h2>
+              <h1>
+                <span class='n'>20</span>
+                <small>
+                  <span title='Dólares americanos'>USD</span>
+                  por mes
+                </small>
+              </h1>
+            </div>
             <ul>
               <li>
                 <h4>
@@ -65,12 +70,18 @@ WebFontConfig={google:{families:["Muli"]}},function(){var a=document.createEleme
         </div>
         <div class='span4'>
           <div class='price'>
-            <h3 class='title'>
-              <span class='tip' title='bonsai del tamaño de 2 palmas de mano'>Chiu</span>
-              &nbsp;
-              <span class='n'>USD 40</span>
-              <small>por mes</small>
-            </h3>
+            <div class='title'>
+              <h2>
+                <span class='tip' title='bonsai del tamaño de 2 palmas de mano'>CHIU</span>
+              </h2>
+              <h1>
+                <span class='n'>40</span>
+                <small>
+                  <span title='Dólares americanos'>USD</span>
+                  por mes
+                </small>
+              </h1>
+            </div>
             <ul>
               <li>
                 <h4>
@@ -89,12 +100,18 @@ WebFontConfig={google:{families:["Muli"]}},function(){var a=document.createEleme
         </div>
         <div class='span4'>
           <div class='price'>
-            <h3 class='title'>
-              <span class='tip' title='bonsai del tamaño de 4 palmas de mano'>Omono</span>
-              &nbsp;
-              <span class='n'>USD 70</span>
-              <small>por mes</small>
-            </h3>
+            <div class='title'>
+              <h2>
+                <span class='tip' title='bonsai del tamaño de 2 palmas de mano'>OMONO</span>
+              </h2>
+              <h1>
+                <span class='n'>70</span>
+                <small>
+                  <span title='Dólares americanos'>USD</span>
+                  por mes
+                </small>
+              </h1>
+            </div>
             <ul>
               <li>
                 <h4>
@@ -113,38 +130,73 @@ WebFontConfig={google:{families:["Muli"]}},function(){var a=document.createEleme
         </div>
       </div>
       <br />
+      <br />
       <div class='span12'>
-        Todos Los planes incluyen:
-        <ul>
-          <li>Multiples monedas</li>
-          <li>Copias diarias de seguridad de la Base de datos ( Backups )</li>
-          <li>Soporte via correo electrónico</li>
+        <h4>Todos Los planes incluyen:</h4>
+        <ul class='plans-list'>
+          <li>
+            <i class='icon-ok'></i>
+            No hay costos de instalación
+          </li>
+          <li>
+            <i class='icon-ok'></i>
+            Clientes y Proveedores ilimitados
+          </li>
+          <li>
+            <i class='icon-ok'></i>
+            Compras y Ventas ilimitadas
+          </li>
+          <li>
+            <i class='icon-ok'></i>
+            Multiples monedas
+          </li>
+          <li>
+            <i class='icon-ok'></i>
+            Copias diarias de seguridad de la Base de datos ( Backups )
+          </li>
+          <li>
+            <i class='icon-ok'></i>
+            Soporte via correo electrónico
+          </li>
         </ul>
       </div>
-      <div class='clear'></div>
-      <div class='row-fluid' id='footer'>
-        <div class='span6'>
-          <i><a href="/">bonsaiERP</a></i>
-          El software para la gestión de empresas.
-          <br />
-          Copyright ©2011-2012 bonsaierp.com, Inc.
-          <br />
-          Todos los derechos reservados.
-        </div>
-        <div class='span4'>
-          <label style='margin-bottom: 0px'>Escribanos a:</label>
-          <h3 class='n'><a href="mailto:contacto@bonsaierp.com">contacto@bonsaierp.com</a></h3>
-        </div>
-        <div class='span2'>
-              <a href="http://twitter.com/#!/bonsaierp"><img title="Twitter" alt="Twitter" src="images/twitter.png" />
-          </a>
-      
-              <a href="http://www.facebook.com/pages/BonsaiERP/337187402983197"><img title="Facebook" alt="Facebook" src="images/facebook.png" />
-          </a>
-      
+    </div>
+    <div class='footer'>
+      <div class='container'>
+        <div id='footer'>
+          <div class='row-fluid links'>
+            <div class='span12'>
+              <a href='index.html'>Inicio</a>
+              &middot;
+              <a href='tour.html'>Producto</a>
+              &middot;
+              <a href='prices.html'>Precios</a>
+              &middot;
+              <a href='team.html'>Nosotros</a>
+            </div>
+          </div>
+          <div class='row-fluid'>
+            <div class='span6'>
+              <i><a href="/">bonsaiERP</a></i>
+              El software para la gestión de empresas.
+              <br />
+              Copyright © 2011-2012 bonsaierp.com, Inc.
+            </div>
+            <div class='span4'>
+              <label style='margin-bottom: 0px'>Escribanos a:</label>
+              <h3 class='n'><a href="mailto:contacto@bonsaierp.com">contacto@bonsaierp.com</a></h3>
+            </div>
+            <div class='span2'>
+                    <a href="http://twitter.com/#!/bonsaierp"><img title="Twitter" alt="Twitter" src="images/twitter.png" />
+              </a>
+        
+                    <a href="http://www.facebook.com/pages/BonsaiERP/337187402983197"><img title="Facebook" alt="Facebook" src="images/facebook.png" />
+              </a>
+        
+            </div>
+          </div>
         </div>
       </div>
-      <div class='clear'></div>
     </div>
   </body>
 </html>
