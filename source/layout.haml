@@ -5,9 +5,12 @@
     %link{:rel => "shortcut icon", :href => "/assets/favicon.ico", :type => "image/x-icon"}
     %title
       bonsaiERP - Sistema ERP online - 
+      
       = yield_content :title
+
     %link{ :href => 'http://fonts.googleapis.com/css?family=Muli', :rel => 'stylesheet', :type => 'text/css'}
-    = stylesheet_link_tag  "twitter-bootstrap", "home"
+
+    = stylesheet_link_tag "home"
     = javascript_include_tag "jquery-1.7.1.min.js", "jquery-ui-dialog.min", "twitter-bootstrap/bootstrap-tooltip", "plugins/bcarousel", "homebase"
 
     :javascript
@@ -38,6 +41,6 @@
     #wrapper.container
       = partial "header"
       = yield
-      .clear
-      = partial "footer"
-      .clear
+    .footer
+      .container
+        = partial "footer"

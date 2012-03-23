@@ -1,4 +1,5 @@
 @import "compass";
+@import "twitter-bootstrap.css";
 
 $white: #FFF;
 $black: #000;
@@ -92,7 +93,7 @@ ul{
   #menu{
     list-style: none;
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 260px;
 
     li{
@@ -228,11 +229,22 @@ ul{
 #buttons{
   padding: 15px;
 }
+.footer{
+  background: url(../images/back-black.png);
+}
 #footer{
-  //text-align: center;
+  text-align: left;
   margin: 50px 0;
   padding: 25px 0;
   clear: both;
+  color: darken(white, 30%);
+  .links{
+    margin-bottom: 30px;
+    text-align: center;
+    a{
+      margin: 0 5px;
+    }
+  }
 }
 
 #banner{
@@ -325,21 +337,29 @@ ul.team{
     @include border-top-radius(4px);
     @include border-bottom-radius(8px);
     border: 1px solid lighten(gray, 20%);
-
-    h3.title{
-      @include border-top-radius(3px);
-      background-color: $dark-green;
-      color: white;
+    background: darken(white, 7%);
+    .title{
+      margin: 10px;
+      //@include border-top-radius(3px);
+      //background-color: $dark-green;
+      //color: white;
       padding: 4px;
-      margin: 0 0 10px;
-      text-align: center;
-      font-size: 1.5em;
+      //text-align: center;
+      font-size: 1.7em;
       .n{
         font-size: 1.15em;
       }
+      h1, h2{
+        @include single-text-shadow(white, 1px, 1px, 0);
+        margin: 8px 0;
+        padding: 0;
+      }
+      h1{
+        font-size: 1.9em;
+      }
       small{
-        font-size: 0.7em !important;
-        color: lighten(gray, 35%) !important;
+        font-size: 0.4em !important;
+        color: darken(gray, 20%) !important;
       }
     }
 
@@ -350,6 +370,14 @@ ul.team{
         margin: 0 15px 0 0;
       }
     }
+  }
+}
+ul.plans-list{
+  list-style: none;
+  padding: 0px;
+  margin: 15px 0  0;
+  li{
+    margin: 1px 0;
   }
 }
 
