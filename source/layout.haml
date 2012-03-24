@@ -38,9 +38,11 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   %body
-    #wrapper.container
-      = partial "header"
-      = yield
+    #cont1
+      #wrapper.container
+        = partial "header"
+        = yield
+      .clear
     .footer
       .container
         = partial "footer"

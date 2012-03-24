@@ -20,6 +20,9 @@ body{
   padding: 0px;
   margin: 0px;
   font-size: 13px;
+  background: url(../images/back-black.png);
+}
+#cont1{
   background: $back url("../images/fondo2.png") repeat-x 0px -30px;
 }
 
@@ -56,8 +59,9 @@ ul{
 #wrapper{
   //width: 900px;
   text-align: left;
-  margin: 0px auto 60px;
+  margin: 0px auto;
   //border-radius: 4px 4px 8px 8px;
+  padding-bottom: 30px;
 }
 
 
@@ -234,7 +238,7 @@ ul{
 }
 #footer{
   text-align: left;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 25px 0;
   clear: both;
   color: darken(white, 30%);
